@@ -5,17 +5,21 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'LinkedIn Learning Self Serve Docs',
+			title: 'Docs',
+			logo: {
+              src: './src/assets/lil-logo.png', 
+			},
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/olinares/learning-self-serve-docs',
 			},
 			sidebar: [
 				{
 					label: 'Guides',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', link: '/guides/example/' },
+						// { label: 'Example Guide', link: '/guides/example/' },
 						{ label: 'LMS365', link: '/guides/lms365/' },
+						{ label: 'Workday', link: '/guides/workday/' },
 					],
 				},
 				{
