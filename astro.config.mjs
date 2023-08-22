@@ -15,18 +15,11 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Getting Started',
-					// autogenerate: { directory: 'getting-started' },
-					items: [
-						// Each item here is one entry in the navigation menu.
-						// { label: 'Example Guide', link: '/guides/example/' },
-						{ label: 'LMS365', link: '/guides/lms365/' },
-						{ label: 'Workday', link: '/guides/workday/' },
+					autogenerate: { directory: 'getting-started' },
 				},
 				{
 					label: 'How To Guides',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						// { label: 'Example Guide', link: '/guides/example/' },
 						{ label: 'LMS365', link: '/guides/lms365/' },
 						{ label: 'Workday', link: '/guides/workday/' },
 					],
