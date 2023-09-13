@@ -14,18 +14,33 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: 'Getting Started',
+					label: 'Overview',
 					autogenerate: { directory: 'getting-started' },
 				},
 				{
-					label: 'How To Guides',
+					label: 'Authentication',
 					items: [
-						{ label: 'LMS365', link: '/guides/lms365/' },
-						{ label: 'Workday', link: '/guides/workday/' },
+						{ label: 'SSO', link: '/guides/lms365/' },
+						{ label: 'Non-SSO', link: '/guides/workday/' },
+						{ label: 'SCIM', link: '/guides/lms365/' },
+						{ label: 'LTI', link: '/guides/workday/' },
+						{ label: 'Profile Binding', link: '/guides/lms365/' },
 					],
 				},
 				{
-					label: 'Benefits',
+					label: 'License Management',
+					autogenerate: { directory: 'license-management' },
+				},
+				{
+					label: 'Integrations',
+					autogenerate: { directory: 'integrations' },
+				},
+				{
+					label: 'Groups',
+					autogenerate: { directory: 'reference' },
+				},
+				{
+					label: 'Attributes - Custom Attributes',
 					autogenerate: { directory: 'reference' },
 				},
 			],

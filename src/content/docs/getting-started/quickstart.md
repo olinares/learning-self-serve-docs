@@ -1,6 +1,6 @@
 ---
-title: Sample Guide
-description: A guide in my new docs site.
+title: Getting Started
+description: Get started with LinkedIn Learning.
 ---
 
 # [Editing/Updating LinkedIn Learning docs](https://app.tango.us/app/workflow/194c0a69-78ee-4c1e-8687-0092f6e46163?utm_source=markdown&utm_medium=markdown&utm_campaign=workflow%20export%20links)
