@@ -19,13 +19,7 @@ export default defineConfig({
 				},
 				{
 					label: 'Authentication',
-					items: [
-						{ label: 'SSO', link: '/guides/lms365/' },
-						{ label: 'Non-SSO', link: '/guides/workday/' },
-						{ label: 'SCIM', link: '/guides/lms365/' },
-						{ label: 'LTI', link: '/guides/workday/' },
-						{ label: 'Profile Binding', link: '/guides/lms365/' },
-					],
+					autogenerate: { directory: 'authentication' },
 				},
 				{
 					label: 'License Management',
