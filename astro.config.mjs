@@ -6,6 +6,11 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Docs',
+			site: 'https://learning-selfserve.netlify.app',
+	        integrations: [starlight({ title: 'Site with sitemap' })],
+			editLink: {
+				baseUrl: 'https://github.com/olinares/learning-self-serve-docs/edit/main/',
+			},
 			logo: {
               src: './src/assets/lil-logo.png', 
 			},
@@ -31,11 +36,11 @@ export default defineConfig({
 				},
 				{
 					label: 'Groups',
-					autogenerate: { directory: 'reference' },
+					autogenerate: { directory: 'groups' },
 				},
 				{
-					label: 'Attributes - Custom Attributes',
-					autogenerate: { directory: 'reference' },
+					label: 'Managing Attributes',
+					autogenerate: { directory: 'attributes' },
 				},
 			],
 		}),

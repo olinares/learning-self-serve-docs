@@ -7,8 +7,8 @@ hero:
   image:
     file: ../../assets/LI-In-Bug.png
   actions:
-    - text: Get started with docs
-      link: /guides/workday/
+    - text: Get started here
+      link: /authentication/single-sign-on/
       icon: right-arrow
       variant: primary
     - text: Explore our playbooks
@@ -16,21 +16,22 @@ hero:
       icon: external
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, LinkCard, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## Quick Starts
+
+Learn how to get started with LinkedIn Learning.
 
 <CardGrid stagger>
-	<Card title="Getting started" icon="pencil">
-		Link to some getting started section.
+    <Card title="Admin Course" icon="youtube">
+		In depth [video course](authentication/single-sign-on/) recommended for Admins
 	</Card>
-	<Card title="Admin Course" icon="add-document">
-		[Technical Admin Course](authentication/single-sign-on/#linkedin-learning-admin-course)
+	<Card title="Explore our Playbooks" icon="open-book">
+		[Curated content](https://learning.linkedin.com/customer-success-center) from our customer success team
 	</Card>
-	<Card title="Authentication" icon="setting">
-		[Authentication Quick Start](authentication/single-sign-on/).
-	</Card>
-	<Card title="Explore our playbooks" icon="open-book">
-		Learn more about [our playbooks](https://learning.linkedin.com/customer-success-center).
-	</Card>
+	<LinkCard title="Authentication" description="Learn how to onboard users" href="authentication/single-sign-on/" />
+	<LinkCard title="License Management" description="Learn about all the ways to manage user's licenses" href="license-management/example/" />
+	<LinkCard title="Integrations" description="Learn all about how we integrate with your Learning Management System via AICC or Deep Integration Partners" href="integrations/aicc/aicc" />
+	<LinkCard title="Managing Groups" description="Use groups to assign courses, track team membership and reporting" href="https://learning.linkedin.com/customer-success-center" />
+	<LinkCard title="Custom Attributes" description="Learn how to sync user data via attributes" href="authentication/single-sign-on/" />
 </CardGrid>
