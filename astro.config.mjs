@@ -34,11 +34,11 @@ export default defineConfig({
 				},
 				{
 					label: 'Groups',
-					autogenerate: { directory: 'groups' },
+					autogenerate: { directory: 'group-management' },
 				},
 				{
 					label: 'Managing Attributes',
-					autogenerate: { directory: 'attributes' },
+					autogenerate: { directory: 'attribute-management' },
 				},
 			],
 		}),

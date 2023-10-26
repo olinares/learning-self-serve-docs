@@ -1,6 +1,6 @@
 ---
-title: Manage provisioning via SCIM
-description: Automated user management via SCIM.
+title: Provision LTI users
+description: Learn how to authenticate via LTI.
 ---
 
 LinkedIn Learning supports multiple ways to authenticate users. You can find all the information you need below on your options. Enterprise Single Sign-On (SSO) allows your company's employees to sign into supported LinkedIn applications using their corporate credentials instead of their LinkedIn credentials.
@@ -72,19 +72,3 @@ LinkedIn Learning currently supports SCIM integrations with the following Identi
 * Okta
 
 [Benefits and Feautures](https://learn.microsoft.com/en-us/linkedin/learning/user-and-attribute-management/user-attribute-mgmt-docs/scim)
-
-### Automate provisioning via CSV/SFTP
-
-Large organizations frequently need to revoke multiple licenses (i.e., for ex-employees and -learners) in bulk. The most efficient method of performing this task is administering user data using comma-separated values (CSVs). For example, you can add users in bulk via LinkedIn Learning CSV. You can revoke user licenses in a similar way.
-
-## De-provisioning users
-
-Large organizations frequently need to revoke multiple licenses (i.e., for ex-employees and -learners) in bulk. The most efficient method of performing this task is administering user data using comma-separated values (CSVs). For example, you can add users in bulk via LinkedIn Learning CSV. You can revoke user licenses in a similar way.
-
-### Automate de-provisioning via SCIM
-
-You can remove user licenses in LinkedIn Learning when they do not require access anymore and automate this process via your SSO and SCIM.
-
-### Automate de-provisioning via CSV/SFTP
-
-Large organizations frequently need to revoke multiple licenses (i.e., for ex-employees and -learners) in bulk. The most efficient method of performing this task is administering user data using comma-separated values (CSVs). For example, you can add users in bulk via LinkedIn Learning CSV. You can revoke user licenses in a similar way.

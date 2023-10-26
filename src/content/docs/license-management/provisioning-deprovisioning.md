@@ -1,6 +1,6 @@
 ---
-title: Manage provisioning via SCIM
-description: Automated user management via SCIM.
+title: Adding and removing user licenses
+description: Learn how to manage provisioning and de-provisioning user licenses.
 ---
 
 LinkedIn Learning supports multiple ways to authenticate users. You can find all the information you need below on your options. Enterprise Single Sign-On (SSO) allows your company's employees to sign into supported LinkedIn applications using their corporate credentials instead of their LinkedIn credentials.

@@ -1,6 +1,6 @@
 ---
-title: Setting up Authentication
-description: Overview on your options to configure authentication.
+title: Group management
+description: Learn how to manage groups for user membership, recommend content, and reporting.
 ---
 
 LinkedIn Learning supports multiple ways to authenticate users. You can find all the information you need below on your options. Enterprise Single Sign-On (SSO) allows your company's employees to sign into supported LinkedIn applications using their corporate credentials instead of their LinkedIn credentials.
