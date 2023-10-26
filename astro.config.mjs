@@ -6,8 +6,6 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Docs',
-			site: 'https://learning-selfserve.netlify.app',
-	        integrations: [starlight({ title: 'Site with sitemap' })],
 			editLink: {
 				baseUrl: 'https://github.com/olinares/learning-self-serve-docs/edit/main/',
 			},
