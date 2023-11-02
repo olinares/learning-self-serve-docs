@@ -1,6 +1,8 @@
 ---
 title: Provision Non-SSO users
 description: How to setup authentication for non Single Sign On users.
+sidebar:
+  order: 3
 ---
 
 LinkedIn Learning supports multiple ways to authenticate users. You can find all the information you need below on your options. Enterprise Single Sign-On (SSO) allows your company's employees to sign into supported LinkedIn applications using their corporate credentials instead of their LinkedIn credentials.

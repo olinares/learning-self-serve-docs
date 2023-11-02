@@ -1,6 +1,10 @@
 ---
 title: Provision SSO users
 description: Overview on your options to configure authentication.
+sidebar:
+  order: 1
+banner:
+  content: We just launched something cool! <a href="https://example.com">Check it out</a>
 ---
 
 LinkedIn Learning supports multiple ways to authenticate users. You can find all the information you need below on your options. Enterprise Single Sign-On (SSO) allows your company's employees to sign into supported LinkedIn applications using their corporate credentials instead of their LinkedIn credentials.

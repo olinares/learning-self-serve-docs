@@ -1,6 +1,8 @@
 ---
 title: Connect your LinkedIn profile
 description: Connect your personal LinkedIn profile with your Learning account.
+sidebar:
+  order: 4
 ---
 
 LinkedIn Learning supports multiple ways to authenticate users. You can find all the information you need below on your options. Enterprise Single Sign-On (SSO) allows your company's employees to sign into supported LinkedIn applications using their corporate credentials instead of their LinkedIn credentials.
