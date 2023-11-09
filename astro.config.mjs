@@ -40,6 +40,10 @@ export default defineConfig({
 					label: 'Managing Attributes',
 					autogenerate: { directory: 'attribute-management' },
 				},
+				{
+					label: 'FAQs',
+					autogenerate: { directory: 'faq' },
+				},
 			],
 		}),
 	],
