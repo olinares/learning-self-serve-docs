@@ -5,21 +5,51 @@ sidebar:
   label: Plug & Play Integrations
 ---
 
-## LMS Integrations guides
-
 Explore all the different ways to connect your Learning Management System to LinkedIn Learning.
+
+### What are automated content sync integrations
+
+LinkedIn Learning partners with a number of LMS providers to make learning easy for your admins and seamless for your learners. Integration with LinkedIn Learning offers admins a deep content library in which to administer learner activity, enroll participants, and report on learner progress and content preferences. In LinkedIn Learning, learners have direct access to their courses and administrators can blend custom content with LinkedIn Learning content to create unique learning experiences.
+
+### What are manual AICC integrations
+
+LinkedIn Learning supports the AICC standard for integration with a Learning Management System (LMS). You can download all LinkedIn Learning courses and learning paths as AICC packages, ready to be integrated into your existing LMS.
+
+## Our partner integrations
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-<CardGrid>
-    <Card title="Absorb" icon="star">
-| Deep Integration | AICC Integration | xAPI |
-| ----------- | ----------- | ----------- |
-| [Yes](https://learn.microsoft.com/en-us/linkedin/learning/lms-integrations/integration-docs/absorb) | [Yes](https://learn.microsoft.com/en-us/linkedin/learning/lms-integrations/integration-docs/standard-aicc) | No |
-	</Card>
- <Card title="Workday" icon="star">
-| Deep Integration | AICC Integration | xAPI |
-| ----------- | ----------- | ----------- |
-| [Yes](https://learn.microsoft.com/en-us/linkedin/learning/lms-integrations/integration-docs/workday) | [Yes](https://learn.microsoft.com/en-us/linkedin/learning/lms-integrations/integration-docs/standard-aicc) | [Yes](https://learn.microsoft.com/en-us/linkedin/learning/lms-integrations/integration-docs/workday#enable-xapi-learner-activity-tracking-in-linkedin-learning) |
-</Card>
-</CardGrid>
+  <Card title="Partner Integrations" icon="star">
+    Use our [Standard AICC Integration guide](https://learn.microsoft.com/en-us/linkedin/learning/lms-integrations/integration-docs/standard-aicc) for all Manual AICC integrations.
+    | LMS Partner | Automated Sync | Manual AICC | Reporting
+    | ----------- | ----------- | ----------- | ----------- |
+    | [360 Learning](https://learn.microsoft.com/en-us/linkedin/learning/lms-integrations/integration-docs/360learning) | Yes | No | xAPI
+    | [Absorb](https://learn.microsoft.com/en-us/linkedin/learning/lms-integrations/integration-docs/absorb) | Yes | Yes | AICC
+    | [Adobe](https://learn.microsoft.com/en-us/linkedin/learning/lms-integrations/integration-docs/adobe) | Yes | Yes | AICC
+    | Betterworks | Yes | No | xAPI
+    | Blackboard | Yes | Yes | AICC
+    | Bridge | Yes | Yes | xAPI
+    | Continu | Yes | No | xAPI
+    | Cornerstone | Yes | Yes | xAPI
+    | CrossKnowledge | Yes | Yes | AICC
+    | Degreed | Yes | No | xAPI
+    | Digital Chalk | Yes | Yes | AICC
+    | Docebo/Dayforce | Yes | Yes | AICC
+    | Edcast | Yes | No | xAPI
+    | Everwise | Yes | No | AICC
+    | Fuse | Yes | No | None
+    | IMS | Yes | No | xAPI
+    | Infor | Yes | Yes | AICC
+    | Knowledge Anywhere | Yes | No | None
+    | LearnUpon | Yes | No | xAPI
+    | LMS365 | Yes | Yes | AICC, xAPI
+    | MindTickle | Yes | Yes | xAPI
+    | Oracle Learning Cloud | Yes | Yes | AICC
+    | Pathgater | Yes | No | None
+    | Saba | Yes | Yes | xAPI
+    | SuccessFactors | Yes | Yes | OCN
+    | SumTotal | Yes | Yes | xAPI
+    | Totara | Yes | Yes | xAPI
+    | Valamis | Yes | No | xAPI
+    | Workday | Yes | Yes | xAPI
+  </Card>
