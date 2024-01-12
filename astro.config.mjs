@@ -6,14 +6,8 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Docs',
-			editLink: {
-				baseUrl: 'https://github.com/olinares/learning-self-serve-docs/edit/main/',
-			},
 			logo: {
               src: './src/assets/lil-logo.png', 
-			},
-			social: {
-				github: 'https://github.com/olinares/learning-self-serve-docs',
 			},
 			sidebar: [
 				{
