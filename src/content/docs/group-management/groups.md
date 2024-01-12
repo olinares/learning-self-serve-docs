@@ -3,88 +3,44 @@ title: Group management
 description: Learn how to manage groups for user membership, recommend content, and reporting.
 ---
 
-LinkedIn Learning supports multiple ways to authenticate users. You can find all the information you need below on your options. Enterprise Single Sign-On (SSO) allows your company's employees to sign into supported LinkedIn applications using their corporate credentials instead of their LinkedIn credentials.
+Groups are an easy, intuitive way to recommend content to a specific set of learners. You can create groups of learners in your Learning account and recommend courses or learning paths to everyone in the group at one time.
 
-Using SSO and integrating with an SSO provider is not required to use LinkedIn applications. If SSO is not configured, your employees can authenticate themselves using their current personal LinkedIn credentials or create a new member account.
+### Add groups via Admin Center
 
-## LinkedIn Learning Admin Course
+Manually create groups and assign learners to groups in Admin Center
 
-If you want an in depth overview on how to get started as an Admin with LinkedIn Learning, we recommend the following course:
+* [Add and manage groups/members via Admin Center](https://www.linkedin.com/help/learning/answer/a701831?hcppcid=search)
+* [Create child groups via Admin Center](https://www.linkedin.com/help/learning/answer/a702939?hcppcid=search)
 
-:::tip[Video Course]
-Enroll in the [Getting Started as a Technical Admin course](https://www.linkedin.com/learning-login/share?account=104&forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fgetting-started-as-a-technical-admin-for-linkedin-learning%3Ftrk%3Dshare_ent_url%26shareId%3DlthUDRpeTvqjeC2dLu%252B5Ww%253D%253D).
-:::
+### Add groups automatically via SSO using custom attributes
 
-## LinkedIn Profile binding
+From your SSO custom attributes, you can dynamically create groups and assign members to those by selecting Assign Groups during the custom attribute creation process. When you select this feature, a new group will be created for each unique value of that custom attribute, and the newly created groups will contain learners who have the same corresponding values.
 
-**Access LinkedIn Learning and connect your LinkedIn profile.**
+* [Add automated groups using custom attributes via SSO](https://www.linkedin.com/help/learning/answer/a700917?hcppcid=search)
 
-The way you access LinkedIn Learning will depend on the configuration choices made for your organization.
-Organizations can choose whether to enable Single Sign-On (SSO) for LinkedIn Learning, or not, and whether to
-require, make optional, or not allow learners to connect their LinkedIn profile to their LinkedIn Learning account.
+### Add groups automatically via CSV/SFTP
 
-### Benefits of connecting your LinkedIn profile to your LinkedIn Learning account
+You can setup an automated feed from your HRIS system via a CSV file using an SFTP connection to create/update/remove groups and assignments.
 
-When you connect your LinkedIn profile to your LinkedIn Learning account, you will get personalized and
-interactive learning experiences. Benefits to connecting your LinkedIn profile include:
+* [Add users to a group via CSV/SFTP](https://learn.microsoft.com/en-us/linkedin/learning/user-and-attribute-management/user-attribute-mgmt-docs/org-sync-bulk-csv#add-users-to-a-group-in-your-csv-file)
+* [Setup automated feed using SFTP via your HRIS](https://learn.microsoft.com/en-us/linkedin/learning/user-and-attribute-management/user-attribute-mgmt-docs/add-sftp)
 
-* Share your learning achievements: Add Certificates of Completion and skills to your LinkedIn profile and
-share LinkedIn Learning videos with your network.
-* Watch courses with your connections and colleagues: See who else is learning with you and build
-connections.
-* Receive customized content recommendations: Get recommendations based on what your connections and
-similar professionals are viewing, as well as recommendations based on your LinkedIn profile.
-* Join learning groups: Deepen your learning by engaging other like-minded learners who have similar career
-aspirations.
-* Ask questions and get answers: Use Q&A to continue the conversation beyond the course with peers and
-instructors.
+### Automatically assign and remove users from groups via SCIM
 
-### LinkedIn Learning Login Flows
-
-What type of login experience your users can expect depending on your authentication method. [Login Flows](https://training.talent.linkedin.com/page/linkedin-learning-customer-resources?q=login%20flow#language_english).
-
-## Provisioning users
-
-LinkedIn Learning gives you options to automate user provisioning, onboarding in different ways:
-
-### Single Sign On Providers
-
-We have documentation for all major IDP SSO providers. Choose your IDP provider below:
-
-* Standard SAML integration
-* Okta
-* Azure AD
-* ADFS
-
-### Automate provisioning via SSO
-
-Once you have enabled SSO, you can automatically assign licenses to your employees by toggling Automatically assign licenses to "On". When you enable this option, users are automatically granted a license when they are authenticated for the first time.
-
-* [Assigning licenses automatically](https://learn.microsoft.com/en-us/linkedin/learning/sso-auth/sso-docs/sso-implementation#assigning-licenses)
-
-### Automate provisioning via SCIM
+If you are using SSO as your authentication method, you could benefit from provisioning groups and group memberships in LinkedIn Learning automatically.
 
 The System for Cross-domain Identity Management (SCIM) specification is designed to make managing user identities in cloud-based applications and services like LinkedIn Learning easier. By utilizing SCIM, you can automate user provisioning and de-provisioning and keep user attributes and group memberships up to date with your internal systems.
 
 LinkedIn Learning currently supports SCIM integrations with the following Identity Providers:
 
-* Azure Active Directory
-* Okta
+* [SCIM provisioning via Azure Active Directory](https://learn.microsoft.com/en-us/linkedin/learning/user-and-attribute-management/user-attribute-mgmt-docs/azure-ad-auto-provisioning)
+* [SCIM provisioning via Okta](https://learn.microsoft.com/en-us/linkedin/learning/user-and-attribute-management/user-attribute-mgmt-docs/okta-scim)
+* [SCIM provisioning via OneLogin](https://learn.microsoft.com/en-us/linkedin/learning/user-and-attribute-management/user-attribute-mgmt-docs/onelogin-scim)
 
-[Benefits and Feautures](https://learn.microsoft.com/en-us/linkedin/learning/user-and-attribute-management/user-attribute-mgmt-docs/scim)
+## Recommending content to your group of users
 
-### Automate provisioning via CSV/SFTP
+As a Learning admin, you can curate, recommend, and share custom learning paths and collections to your learners. Learning paths curated by LinkedIn Learning are also available to recommend to, or share with your learners. You can edit these learning paths to customize them to the unique needs of your organization.
 
-Large organizations frequently need to revoke multiple licenses (i.e., for ex-employees and -learners) in bulk. The most efficient method of performing this task is administering user data using comma-separated values (CSVs). For example, you can add users in bulk via LinkedIn Learning CSV. You can revoke user licenses in a similar way.
+### Recommend course content as an Admin
 
-## De-provisioning users
-
-Large organizations frequently need to revoke multiple licenses (i.e., for ex-employees and -learners) in bulk. The most efficient method of performing this task is administering user data using comma-separated values (CSVs). For example, you can add users in bulk via LinkedIn Learning CSV. You can revoke user licenses in a similar way.
-
-### Automate de-provisioning via SCIM
-
-You can remove user licenses in LinkedIn Learning when they do not require access anymore and automate this process via your SSO and SCIM.
-
-### Automate de-provisioning via CSV/SFTP
-
-Large organizations frequently need to revoke multiple licenses (i.e., for ex-employees and -learners) in bulk. The most efficient method of performing this task is administering user data using comma-separated values (CSVs). For example, you can add users in bulk via LinkedIn Learning CSV. You can revoke user licenses in a similar way.
+* [Recommend content to a group of learners](https://www.linkedin.com/help/learning/answer/a704807?hcppcid=search)
