@@ -3,88 +3,35 @@ title: Manage custom attributes data
 description: Learn how to manage and sync user's custom attribute data.
 ---
 
-LinkedIn Learning supports multiple ways to authenticate users. You can find all the information you need below on your options. Enterprise Single Sign-On (SSO) allows your company's employees to sign into supported LinkedIn applications using their corporate credentials instead of their LinkedIn credentials.
+Custom attributes allow admins to customize data entry points for their learners. Admins can create custom attributes for their learners by either uploading them to CSV, or adding the attribute using the SSO setting.
 
-Using SSO and integrating with an SSO provider is not required to use LinkedIn applications. If SSO is not configured, your employees can authenticate themselves using their current personal LinkedIn credentials or create a new member account.
+## Managing custom attributes
 
-## LinkedIn Learning Admin Course
+Admin functionality for custom attributes is available only on desktop devices.
+Attributes are case sensitive (i.e., "Sydney Office" is recognized as a different attribute than "Sydney office").
 
-If you want an in depth overview on how to get started as an Admin with LinkedIn Learning, we recommend the following course:
+* [Attribute management overview](https://learn.microsoft.com/en-us/linkedin/learning/user-and-attribute-management/user-attribute-mgmt-docs/user-management-overview)
 
-:::tip[Video Course]
-Enroll in the [Getting Started as a Technical Admin course](https://www.linkedin.com/learning-login/share?account=104&forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fgetting-started-as-a-technical-admin-for-linkedin-learning%3Ftrk%3Dshare_ent_url%26shareId%3DlthUDRpeTvqjeC2dLu%252B5Ww%253D%253D).
-:::
+### Create custom attributes via CSV
 
-## LinkedIn Profile binding
+* [Manage custom attributes via CSV](https://www.linkedin.com/help/learning/answer/a704884)
 
-**Access LinkedIn Learning and connect your LinkedIn profile.**
+### Manage custom attributes via SSO
 
-The way you access LinkedIn Learning will depend on the configuration choices made for your organization.
-Organizations can choose whether to enable Single Sign-On (SSO) for LinkedIn Learning, or not, and whether to
-require, make optional, or not allow learners to connect their LinkedIn profile to their LinkedIn Learning account.
+From your SSO custom attributes, you can dynamically create groups and assign members to those by selecting Assign Groups during the custom attribute creation process. When you select this feature, a new group will be created for each unique value of that custom attribute, and the newly created groups will contain learners who have the same corresponding values.
 
-### Benefits of connecting your LinkedIn profile to your LinkedIn Learning account
+If you select Assign Groups, the system will automatically create a new group for each unique value. Be sure to uncheck this option for attributes that are specific to a single learner, such as username or email address.
 
-When you connect your LinkedIn profile to your LinkedIn Learning account, you will get personalized and
-interactive learning experiences. Benefits to connecting your LinkedIn profile include:
+Please work with your SSO provider to send LinkedIn Learning the learner values for your custom attribute through a SAML assertion. Users need to login via SAML SSO after the setup is complete in order for the new custom attribute value to be entered into the learner profile.
 
-* Share your learning achievements: Add Certificates of Completion and skills to your LinkedIn profile and
-share LinkedIn Learning videos with your network.
-* Watch courses with your connections and colleagues: See who else is learning with you and build
-connections.
-* Receive customized content recommendations: Get recommendations based on what your connections and
-similar professionals are viewing, as well as recommendations based on your LinkedIn profile.
-* Join learning groups: Deepen your learning by engaging other like-minded learners who have similar career
-aspirations.
-* Ask questions and get answers: Use Q&A to continue the conversation beyond the course with peers and
-instructors.
+* [Use SSO custom attributes to create groups in Learning](https://www.linkedin.com/help/learning/answer/a700917)
+* [Manage custom attributes via SSO](https://www.linkedin.com/help/learning/answer/a704884)
 
-### LinkedIn Learning Login Flows
+### Automate custom attribute management via CSV/SFTP/HTTPS
 
-What type of login experience your users can expect depending on your authentication method. [Login Flows](https://training.talent.linkedin.com/page/linkedin-learning-customer-resources?q=login%20flow#language_english).
+Large organizations frequently need to add custom attribute data in bulk. One of the most efficient methods of performing this task is administering user data using comma-separated values (CSVs). For example, you can add users in bulk via LinkedIn Learning CSV. You can manage custom attributes in a similar way.
 
-## Provisioning users
-
-LinkedIn Learning gives you options to automate user provisioning, onboarding in different ways:
-
-### Single Sign On Providers
-
-We have documentation for all major IDP SSO providers. Choose your IDP provider below:
-
-* Standard SAML integration
-* Okta
-* Azure AD
-* ADFS
-
-### Automate provisioning via SSO
-
-Once you have enabled SSO, you can automatically assign licenses to your employees by toggling Automatically assign licenses to "On". When you enable this option, users are automatically granted a license when they are authenticated for the first time.
-
-* [Assigning licenses automatically](https://learn.microsoft.com/en-us/linkedin/learning/sso-auth/sso-docs/sso-implementation#assigning-licenses)
-
-### Automate provisioning via SCIM
-
-The System for Cross-domain Identity Management (SCIM) specification is designed to make managing user identities in cloud-based applications and services like LinkedIn Learning easier. By utilizing SCIM, you can automate user provisioning and de-provisioning and keep user attributes and group memberships up to date with your internal systems.
-
-LinkedIn Learning currently supports SCIM integrations with the following Identity Providers:
-
-* Azure Active Directory
-* Okta
-
-[Benefits and Feautures](https://learn.microsoft.com/en-us/linkedin/learning/user-and-attribute-management/user-attribute-mgmt-docs/scim)
-
-### Automate provisioning via CSV/SFTP
-
-Large organizations frequently need to revoke multiple licenses (i.e., for ex-employees and -learners) in bulk. The most efficient method of performing this task is administering user data using comma-separated values (CSVs). For example, you can add users in bulk via LinkedIn Learning CSV. You can revoke user licenses in a similar way.
-
-## De-provisioning users
-
-Large organizations frequently need to revoke multiple licenses (i.e., for ex-employees and -learners) in bulk. The most efficient method of performing this task is administering user data using comma-separated values (CSVs). For example, you can add users in bulk via LinkedIn Learning CSV. You can revoke user licenses in a similar way.
-
-### Automate de-provisioning via SCIM
-
-You can remove user licenses in LinkedIn Learning when they do not require access anymore and automate this process via your SSO and SCIM.
-
-### Automate de-provisioning via CSV/SFTP
-
-Large organizations frequently need to revoke multiple licenses (i.e., for ex-employees and -learners) in bulk. The most efficient method of performing this task is administering user data using comma-separated values (CSVs). For example, you can add users in bulk via LinkedIn Learning CSV. You can revoke user licenses in a similar way.
+* [Add and manage learners automatically via SFTP](https://learn.microsoft.com/en-us/linkedin/learning/user-and-attribute-management/user-attribute-mgmt-docs/add-sftp)
+* [Add and manage learners automatically via Workday](https://learn.microsoft.com/en-us/linkedin/learning/user-and-attribute-management/user-attribute-mgmt-docs/org-sync-workday)
+* [Add and manage learners automatically via SuccessFactors](https://learn.microsoft.com/en-us/linkedin/learning/user-and-attribute-management/user-attribute-mgmt-docs/org-sync-successfactors)
+* [Add and manage learners automatically via HTTPS Protocol](https://learn.microsoft.com/en-us/linkedin/learning/user-and-attribute-management/user-attribute-mgmt-docs/add-https)
